@@ -10,3 +10,20 @@ V súbore najprv dochádza k predspracovaniu dát, následne sa rozdelí dataset
   - Rozhodovací strom
   - Logistická regresia
   - MLP Classifier
+Potom dochádza k nadvzorkovaniu trénovacej podmnožiny a opätovnému vytvoreniu rovnakých modelov.
+
+Na záver fázy modelovania sa vytvárajú ďalšie modely:
+  - Easy Ensemble Classifier
+  - Balanced Bagging Classifier
+  - Bagging Classifier
+  - Adaptive Boosting Classifier
+
+Sú vypočítané metriky:
+  - AUC
+  - ROC
+  - matica zámen
+  - úspešnosť, presnosť, návratnosť, F1 skóre
+
+Jednotlivým prípadom z matice zámen sú pridelené váhy a vypočítalo sa skóre každého modelu.
+
+Následne sa vizualizovali výsledky modelov na metrikách.
